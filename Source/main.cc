@@ -2,8 +2,14 @@
 
 using namespace std;
 
+#include "GUI.h"
+
 int main()
 {
-  cout << "hello\n";
+  GUI gui;
+  while (1)
+  {
+    gui.Update();
+  }
   return 0;
 }
