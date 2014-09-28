@@ -1,6 +1,7 @@
 OBJ1 = build/main.o build/GUI.o
 
 all:
+	mkdir -p build
 	make cmwan
 
 cmwan:	$(OBJ1)
@@ -13,7 +14,7 @@ build/GUI.o:	src/GUI.cc src/GUI.h
 	g++ -g -o build/GUI.o -c src/GUI.cc
 
 clean:
-	rm -r -f build/*.o build/CMWAN
+	sudo rm -r build
 
 run:
 	make
