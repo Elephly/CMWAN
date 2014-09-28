@@ -7,16 +7,21 @@ GUI::GUI()
 
 GUI::~GUI() { }
 
-void GUI::Update()
+bool GUI::Update(bool force)
 {
-  system("clear");
-  display = "";
-  for (int i = 0; i < 100; i++)
+  if (force)
   {
-    for (int j = 0; j < 40; j++)
+    system("clear");
+    display = "";
+    for (int i = 0; i < 40; i++)
     {
-      display.push_back('.');
+      for (int j = 0; j < 100; j++)
+      {
+        display.push_back('.');
+      }
     }
+    cout << display;
+    cout.flush();
   }
-  cout << display;
+  return force;
 }

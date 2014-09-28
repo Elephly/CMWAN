@@ -12,7 +12,7 @@ class GUI
   public:
     GUI();
     ~GUI();
-    void Update();
+    bool Update(bool force);
 
   private:
     string display;
