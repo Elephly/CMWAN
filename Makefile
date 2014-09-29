@@ -1,3 +1,5 @@
+.PHONY:	all clean run
+
 OBJ1 = build/main.o build/GUI.o
 
 all:
