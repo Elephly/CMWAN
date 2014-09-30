@@ -5,6 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 -extra	Makefile	/^	ctags -R --extra=f .$/;"	m
+Draw	src/GUI.cc	/^void GUI::Draw()$/;"	f	class:GUI
 Draw	src/Game.cc	/^void Game::Draw()$/;"	f	class:Game
 GAMEOBJECT_H	src/GameObject.h	2;"	d
 GAME_H	src/Game.h	2;"	d
@@ -29,7 +30,6 @@ Grid.h	src/Grid.h	1;"	F
 Makefile	Makefile	1;"	F
 OBJ1	Makefile	/^OBJ1 = build\/main.o build\/Game.o build\/GameObject.o build\/Grid.o build\/GUI.o$/;"	m
 Run	src/Game.cc	/^void Game::Run()$/;"	f	class:Game
-Update	src/GUI.cc	/^bool GUI::Update(bool force)$/;"	f	class:GUI
 Update	src/Game.cc	/^void Game::Update()$/;"	f	class:Game
 display	src/GUI.h	/^    string display;$/;"	m	class:GUI
 gui	src/Game.h	/^    GUI gui;$/;"	m	class:Game
