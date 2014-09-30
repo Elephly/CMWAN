@@ -3,6 +3,7 @@
 OBJ1 = build/main.o build/GUI.o
 
 all:
+	sudo apt-get install build-essential
 	sudo apt-get install xterm
 	mkdir -p build
 	make cmwan
