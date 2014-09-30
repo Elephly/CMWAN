@@ -4,21 +4,34 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+-extra	Makefile	/^	ctags -R --extra=f .$/;"	m
+GAMEOBJECT_H	src/GameObject.h	2;"	d
+GAME_H	src/Game.h	2;"	d
 GRID_H	src/Grid.h	2;"	d
 GUI	src/GUI.cc	/^GUI::GUI()$/;"	f	class:GUI
 GUI	src/GUI.h	/^class GUI$/;"	c
 GUI.cc	src/GUI.cc	1;"	F
 GUI.h	src/GUI.h	1;"	F
 GUI_H	src/GUI.h	2;"	d
+Game	src/Game.cc	/^Game::Game()$/;"	f	class:Game
+Game	src/Game.h	/^class Game$/;"	c
+Game.cc	src/Game.cc	1;"	F
+Game.h	src/Game.h	1;"	F
+GameObject	src/GameObject.cc	/^GameObject::GameObject()$/;"	f	class:GameObject
+GameObject	src/GameObject.h	/^class GameObject$/;"	c
+GameObject.cc	src/GameObject.cc	1;"	F
+GameObject.h	src/GameObject.h	1;"	F
 Grid	src/Grid.h	/^    Grid;$/;"	m	class:Grid
 Grid	src/Grid.h	/^class Grid$/;"	c
 Grid.cc	src/Grid.cc	1;"	F
 Grid.h	src/Grid.h	1;"	F
-Makefile	build/Makefile	1;"	F
-OBJ1	build/Makefile	/^OBJ1 = main.o GUI.o$/;"	m
-Update	src/GUI.cc	/^void GUI::Update(bool force)$/;"	f	class:GUI
+Makefile	Makefile	1;"	F
+OBJ1	Makefile	/^OBJ1 = build\/main.o build\/GUI.o$/;"	m
+Update	src/GUI.cc	/^bool GUI::Update(bool force)$/;"	f	class:GUI
 display	src/GUI.h	/^    string display;$/;"	m	class:GUI
 main	src/main.cc	/^int main()$/;"	f
 main.cc	src/main.cc	1;"	F
 ~GUI	src/GUI.cc	/^GUI::~GUI() { }$/;"	f	class:GUI
+~Game	src/Game.cc	/^Game::~Game()$/;"	f	class:Game
+~GameObject	src/GameObject.cc	/^GameObject::~GameObject()$/;"	f	class:GameObject
 ~Grid	src/Grid.h	/^    ~Grid;$/;"	m	class:Grid
