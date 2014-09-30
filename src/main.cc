@@ -8,16 +8,17 @@ using namespace std;
 int main()
 {
   GUI gui;
-  time_t lastUpdate;
-  time_t now;
-  lastUpdate = time(&now);
+  clock_t last = clock();
+  clock_t now = clock();
+  float timediff;
   int i = 0;
   while (1)
   {
-    time(&now);
-    if (gui.Update(now - lastUpdate >= 1))
+    now = clock();
+    timediff = ((float)(now - last)) / CLOCKS_PER_SEC;
+    if (gui.Update(timediff >= 0.05f))
     {
-      time(&lastUpdate);
+      last = clock();
     }
   }
   
