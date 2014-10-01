@@ -6,6 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 -extra	Makefile	/^	ctags -R --extra=f .$/;"	m
 Add	src/Grid.cc	/^void Grid::Add(GameObject* obj)$/;"	f	class:Grid
+CC	Makefile	/^CC = g++ -g -pthread -std=c++11$/;"	m
 Draw	src/GUI.cc	/^void GUI::Draw(Grid* map)$/;"	f	class:GUI
 Draw	src/Game.cc	/^void Game::Draw()$/;"	f	class:Game
 GAMEOBJECT_H	src/GameObject.h	2;"	d
@@ -25,6 +26,7 @@ GameObject	src/GameObject.cc	/^GameObject::GameObject(int x, int y, char c) : po
 GameObject	src/GameObject.h	/^class GameObject$/;"	c
 GameObject.cc	src/GameObject.cc	1;"	F
 GameObject.h	src/GameObject.h	1;"	F
+GetInput	src/Input.cc	/^void Input::GetInput()$/;"	f	class:Input
 Grid	src/Grid.cc	/^Grid::Grid()$/;"	f	class:Grid
 Grid	src/Grid.h	/^class Grid$/;"	c
 Grid.cc	src/Grid.cc	1;"	F

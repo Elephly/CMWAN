@@ -2,6 +2,7 @@
 #define INPUT_H
 
 #include <iostream>
+#include <thread>
 
 using namespace std;
 
@@ -12,6 +13,7 @@ class Input
     ~Input();
     void Update();
   private:
+    void GetInput();
 };
 
 #endif
