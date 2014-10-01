@@ -1,6 +1,6 @@
 .PHONY:	all clean run tags
 
-OBJ1 = build/main.o build/Game.o build/GameObject.o build/Grid.o build/GUI.o
+OBJ1 = build/main.o build/Game.o build/GameObject.o build/Grid.o build/GUI.o build/Input.o
 
 all:
 	sudo apt-get install build-essential
@@ -14,7 +14,7 @@ cmwan:	$(OBJ1)
 build/main.o:	src/main.cc src/GUI.h
 	g++ -g -o build/main.o -c src/main.cc
 
-build/Game.o:	src/Game.cc src/Game.h src/GameObject.h src/Grid.h src/GUI.h
+build/Game.o:	src/Game.cc src/Game.h src/GameObject.h src/Grid.h src/GUI.h src/Input.h
 	g++ -g -o build/Game.o -c src/Game.cc
 
 build/GameObject.o:	src/GameObject.cc src/GameObject.h
@@ -25,6 +25,9 @@ build/Grid.o:	src/Grid.cc src/Grid.h src/GameObject.h
 
 build/GUI.o:	src/GUI.cc src/GUI.h src/Grid.h
 	g++ -g -o build/GUI.o -c src/GUI.cc
+
+build/Input.o:	src/Input.cc src/Input.h
+	g++ -g -o build/Input.o -c src/Input.cc
 
 clean:
 	sudo rm -r build

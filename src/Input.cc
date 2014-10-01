@@ -9,3 +9,8 @@ Input::~Input()
 {
 
 }
+
+void Input::Update()
+{
+
+}

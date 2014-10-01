@@ -6,6 +6,7 @@
 #include "GameObject.h"
 #include "Grid.h"
 #include "GUI.h"
+#include "Input.h"
 
 class Game
 {
@@ -20,6 +21,7 @@ class Game
     GameObject player;
     Grid map;
     GUI gui;
+    Input input;
     clock_t last;
     clock_t now;
     float timediff;

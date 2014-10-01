@@ -29,14 +29,21 @@ Grid	src/Grid.cc	/^Grid::Grid()$/;"	f	class:Grid
 Grid	src/Grid.h	/^class Grid$/;"	c
 Grid.cc	src/Grid.cc	1;"	F
 Grid.h	src/Grid.h	1;"	F
+INPUT_H	src/Input.h	2;"	d
+Input	src/Input.cc	/^Input::Input()$/;"	f	class:Input
+Input	src/Input.h	/^class Input$/;"	c
+Input.cc	src/Input.cc	1;"	F
+Input.h	src/Input.h	1;"	F
 Makefile	Makefile	1;"	F
-OBJ1	Makefile	/^OBJ1 = build\/main.o build\/Game.o build\/GameObject.o build\/Grid.o build\/GUI.o$/;"	m
+OBJ1	Makefile	/^OBJ1 = build\/main.o build\/Game.o build\/GameObject.o build\/Grid.o build\/GUI.o build\/Input.o$/;"	m
 Run	src/Game.cc	/^void Game::Run()$/;"	f	class:Game
 Update	src/Game.cc	/^void Game::Update()$/;"	f	class:Game
 Update	src/Grid.cc	/^void Grid::Update()$/;"	f	class:Grid
+Update	src/Input.cc	/^void Input::Update()$/;"	f	class:Input
 display	src/GUI.h	/^    string display;$/;"	m	class:GUI
 gui	src/Game.h	/^    GUI gui;$/;"	m	class:Game
 icon	src/GameObject.h	/^    char icon;$/;"	m	class:GameObject
+input	src/Game.h	/^    Input input;$/;"	m	class:Game
 last	src/Game.h	/^    clock_t last;$/;"	m	class:Game
 main	src/main.cc	/^int main()$/;"	f
 main.cc	src/main.cc	1;"	F
@@ -51,3 +58,4 @@ timediff	src/Game.h	/^    float timediff;$/;"	m	class:Game
 ~Game	src/Game.cc	/^Game::~Game()$/;"	f	class:Game
 ~GameObject	src/GameObject.cc	/^GameObject::~GameObject()$/;"	f	class:GameObject
 ~Grid	src/Grid.cc	/^Grid::~Grid()$/;"	f	class:Grid
+~Input	src/Input.cc	/^Input::~Input()$/;"	f	class:Input

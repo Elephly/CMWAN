@@ -35,4 +35,5 @@ void Game::Update()
 void Game::Draw()
 {
   gui.Draw(&map);
+  input.Update();
 }
