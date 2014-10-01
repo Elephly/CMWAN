@@ -2,11 +2,14 @@
 #define GAME_H
 
 #include <ctime>
+#include <thread>
 
 #include "GameObject.h"
 #include "Grid.h"
 #include "GUI.h"
 #include "Input.h"
+
+using namespace std;
 
 class Game
 {
@@ -15,6 +18,8 @@ class Game
     ~Game();
     void Run();
   private:
+    void ManageInput();
+    void GameRun();
     void Update();
     void Draw();
 

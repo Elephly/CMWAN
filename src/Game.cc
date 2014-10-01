@@ -14,6 +14,22 @@ Game::~Game()
 
 void Game::Run()
 {
+  thread inputThread(&Game::ManageInput, this);
+  thread gameThread(&Game::GameRun, this);
+  inputThread.join();
+  gameThread.join();
+}
+
+void Game::ManageInput()
+{
+  while (1)
+  {
+    
+  }
+}
+
+void Game::GameRun()
+{
   while (1)
   {
     now = clock();
@@ -29,11 +45,10 @@ void Game::Run()
 
 void Game::Update()
 {
-  map.Update();
+
 }
 
 void Game::Draw()
 {
   gui.Draw(&map);
-  input.Update();
 }

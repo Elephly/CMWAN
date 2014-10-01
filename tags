@@ -26,6 +26,7 @@ GameObject	src/GameObject.cc	/^GameObject::GameObject(int x, int y, char c) : po
 GameObject	src/GameObject.h	/^class GameObject$/;"	c
 GameObject.cc	src/GameObject.cc	1;"	F
 GameObject.h	src/GameObject.h	1;"	F
+GameRun	src/Game.cc	/^void Game::GameRun()$/;"	f	class:Game
 GetInput	src/Input.cc	/^void Input::GetInput()$/;"	f	class:Input
 Grid	src/Grid.cc	/^Grid::Grid()$/;"	f	class:Grid
 Grid	src/Grid.h	/^class Grid$/;"	c
@@ -37,6 +38,7 @@ Input	src/Input.h	/^class Input$/;"	c
 Input.cc	src/Input.cc	1;"	F
 Input.h	src/Input.h	1;"	F
 Makefile	Makefile	1;"	F
+ManageInput	src/Game.cc	/^void Game::ManageInput()$/;"	f	class:Game
 OBJ1	Makefile	/^OBJ1 = build\/main.o build\/Game.o build\/GameObject.o build\/Grid.o build\/GUI.o build\/Input.o$/;"	m
 Run	src/Game.cc	/^void Game::Run()$/;"	f	class:Game
 Update	src/Game.cc	/^void Game::Update()$/;"	f	class:Game

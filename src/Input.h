@@ -2,9 +2,6 @@
 #define INPUT_H
 
 #include <iostream>
-#include <thread>
-
-using namespace std;
 
 class Input
 {
