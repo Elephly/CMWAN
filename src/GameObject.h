@@ -5,9 +5,13 @@ class GameObject
 {
   public:
     GameObject();
+    GameObject(int, int, char);
     ~GameObject();
 
   private:
+    int posX;
+    int posY;
+    char icon;
 };
 
 #endif

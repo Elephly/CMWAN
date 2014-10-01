@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "Grid.h"
+
 using namespace std;
 
 class GUI
@@ -12,7 +14,7 @@ class GUI
   public:
     GUI();
     ~GUI();
-    void Draw();
+    void Draw(Grid*);
 
   private:
     string display;

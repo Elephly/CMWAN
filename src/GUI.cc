@@ -7,7 +7,7 @@ GUI::GUI()
 
 GUI::~GUI() { }
 
-void GUI::Draw()
+void GUI::Draw(Grid* map)
 {
   system("clear");
   display = "";

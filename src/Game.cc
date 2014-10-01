@@ -2,6 +2,8 @@
 
 Game::Game()
 {
+  player = GameObject(10, 10, 'P');
+  map.Add(&player);
   last = now = clock();
 }
 
@@ -27,10 +29,10 @@ void Game::Run()
 
 void Game::Update()
 {
-
+  map.Update();
 }
 
 void Game::Draw()
 {
-  gui.Draw();
+  gui.Draw(&map);
 }

@@ -17,6 +17,8 @@ class Game
     void Update();
     void Draw();
 
+    GameObject player;
+    Grid map;
     GUI gui;
     clock_t last;
     clock_t now;

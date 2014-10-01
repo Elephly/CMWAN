@@ -5,7 +5,8 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 -extra	Makefile	/^	ctags -R --extra=f .$/;"	m
-Draw	src/GUI.cc	/^void GUI::Draw()$/;"	f	class:GUI
+Add	src/Grid.cc	/^void Grid::Add(GameObject* obj)$/;"	f	class:Grid
+Draw	src/GUI.cc	/^void GUI::Draw(Grid* map)$/;"	f	class:GUI
 Draw	src/Game.cc	/^void Game::Draw()$/;"	f	class:Game
 GAMEOBJECT_H	src/GameObject.h	2;"	d
 GAME_H	src/Game.h	2;"	d
@@ -20,6 +21,7 @@ Game	src/Game.h	/^class Game$/;"	c
 Game.cc	src/Game.cc	1;"	F
 Game.h	src/Game.h	1;"	F
 GameObject	src/GameObject.cc	/^GameObject::GameObject()$/;"	f	class:GameObject
+GameObject	src/GameObject.cc	/^GameObject::GameObject(int x, int y, char c) : posX(x), posY(y), icon(c)$/;"	f	class:GameObject
 GameObject	src/GameObject.h	/^class GameObject$/;"	c
 GameObject.cc	src/GameObject.cc	1;"	F
 GameObject.h	src/GameObject.h	1;"	F
@@ -31,12 +33,19 @@ Makefile	Makefile	1;"	F
 OBJ1	Makefile	/^OBJ1 = build\/main.o build\/Game.o build\/GameObject.o build\/Grid.o build\/GUI.o$/;"	m
 Run	src/Game.cc	/^void Game::Run()$/;"	f	class:Game
 Update	src/Game.cc	/^void Game::Update()$/;"	f	class:Game
+Update	src/Grid.cc	/^void Grid::Update()$/;"	f	class:Grid
 display	src/GUI.h	/^    string display;$/;"	m	class:GUI
 gui	src/Game.h	/^    GUI gui;$/;"	m	class:Game
+icon	src/GameObject.h	/^    char icon;$/;"	m	class:GameObject
 last	src/Game.h	/^    clock_t last;$/;"	m	class:Game
 main	src/main.cc	/^int main()$/;"	f
 main.cc	src/main.cc	1;"	F
+map	src/Game.h	/^    Grid map;$/;"	m	class:Game
 now	src/Game.h	/^    clock_t now;$/;"	m	class:Game
+objects	src/Grid.h	/^    list<GameObject*> objects;$/;"	m	class:Grid
+player	src/Game.h	/^    GameObject player;$/;"	m	class:Game
+posX	src/GameObject.h	/^    int posX;$/;"	m	class:GameObject
+posY	src/GameObject.h	/^    int posY;$/;"	m	class:GameObject
 timediff	src/Game.h	/^    float timediff;$/;"	m	class:Game
 ~GUI	src/GUI.cc	/^GUI::~GUI() { }$/;"	f	class:GUI
 ~Game	src/Game.cc	/^Game::~Game()$/;"	f	class:Game
