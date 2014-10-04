@@ -34,7 +34,7 @@ void Game::GameRun()
   {
     now = clock();
     timediff = ((float)(now - last)) / CLOCKS_PER_SEC;
-    if (timediff >= 0.05f)
+    if (timediff >= 0.2f)
     {
       Update();
       Draw();
