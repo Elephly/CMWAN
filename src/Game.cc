@@ -24,7 +24,7 @@ void Game::ManageInput()
 {
   while (1)
   {
-    
+    input.getch();
   }
 }
 

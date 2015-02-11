@@ -1,6 +1,6 @@
 .PHONY:	all clean run tags
 
-CC = g++ -g -pthread -std=c++11
+CC = g++ -g -pthread -std=c++0x
 OBJ1 = build/main.o build/Game.o build/GameObject.o build/Grid.o build/GUI.o build/Input.o
 
 all:
