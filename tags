@@ -45,18 +45,25 @@ Update	src/Game.cc	/^void Game::Update()$/;"	f	class:Game
 Update	src/Grid.cc	/^void Grid::Update()$/;"	f	class:Grid
 Update	src/Input.cc	/^void Input::Update()$/;"	f	class:Input
 display	src/GUI.h	/^    string display;$/;"	m	class:GUI
+getch	src/Input.cc	/^char Input::getch()$/;"	f	class:Input
+getch_	src/Input.cc	/^char Input::getch_(int echo)$/;"	f	class:Input
+getche	src/Input.cc	/^char Input::getche()$/;"	f	class:Input
 gui	src/Game.h	/^    GUI gui;$/;"	m	class:Game
 icon	src/GameObject.h	/^    char icon;$/;"	m	class:GameObject
+initTermios	src/Input.cc	/^void Input::initTermios(int echo)$/;"	f	class:Input
 input	src/Game.h	/^    Input input;$/;"	m	class:Game
 last	src/Game.h	/^    clock_t last;$/;"	m	class:Game
 main	src/main.cc	/^int main()$/;"	f
 main.cc	src/main.cc	1;"	F
 map	src/Game.h	/^    Grid map;$/;"	m	class:Game
+newS	src/Input.h	/^    struct termios oldS, newS;$/;"	m	class:Input	typeref:struct:Input::
 now	src/Game.h	/^    clock_t now;$/;"	m	class:Game
 objects	src/Grid.h	/^    list<GameObject*> objects;$/;"	m	class:Grid
+oldS	src/Input.h	/^    struct termios oldS, newS;$/;"	m	class:Input	typeref:struct:Input::termios
 player	src/Game.h	/^    GameObject player;$/;"	m	class:Game
 posX	src/GameObject.h	/^    int posX;$/;"	m	class:GameObject
 posY	src/GameObject.h	/^    int posY;$/;"	m	class:GameObject
+resetTermios	src/Input.cc	/^void Input::resetTermios()$/;"	f	class:Input
 timediff	src/Game.h	/^    float timediff;$/;"	m	class:Game
 ~GUI	src/GUI.cc	/^GUI::~GUI() { }$/;"	f	class:GUI
 ~Game	src/Game.cc	/^Game::~Game()$/;"	f	class:Game
